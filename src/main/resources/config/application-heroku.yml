@@ -19,9 +19,9 @@ eureka:
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: ${JDBC_DATABASE_URL}
-    username: ${JDBC_DATABASE_USERNAME}
-    password: ${JDBC_DATABASE_PASSWORD}
+    url: jdbc:mysql://internal-databases.cwq4vr0vajz0.ap-south-1.rds.amazonaws.com:3306/iviewformbook?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: formbook_dev
+    password: formbook_dev
     hikari:
       maximumPoolSize: 8
 server:
